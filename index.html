@@ -1,235 +1,236 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Teks Prosedur – Bahasa Indonesia Kelas 7</title>
+<title>Teks Prosedur – Media Belajar Kelas 7</title>
 <style>
-:root{--bg:#0b0820;--p:#b24bff;--b:#3fa9ff;--t:#f1ecff;--m:#b9b0dd;--g:rgba(255,255,255,.07);--bd:rgba(255,255,255,.18);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-*,*:before,*:after{box-sizing:inherit}
-html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{margin:0;background:var(--bg);color:var(--t);font-family:"Poppins","Segoe UI",system-ui,sans-serif;line-height:1.6}
-#stars{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
-nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;gap:6px;overflow-x:auto;padding:10px 12px;background:rgba(11,8,32,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--bd)}
-nav button{flex:none;border:1px solid var(--bd);background:var(--g);color:var(--t);padding:8px 14px;border-radius:99px;cursor:pointer;font:600 .85rem inherit;font-family:inherit}
-nav button.on{background:linear-gradient(90deg,var(--p),var(--b));border-color:transparent;box-shadow:0 0 14px var(--p)}
-.hero{position:relative;z-index:1;min-height:78vh;display:flex;align-items:center;justify-content:center;padding:24px 16px;overflow:hidden}
-.glass{background:var(--g);border:1px solid var(--bd);border-radius:24px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 8px 40px rgba(120,60,255,.25)}
-.hero .glass{max-width:640px;padding:28px 24px;text-align:center;position:relative;z-index:2}
-.tag{display:inline-block;padding:4px 14px;border-radius:99px;background:rgba(63,169,255,.18);color:#8fd0ff;font-size:.8rem;font-weight:600}
-h1{font-size:clamp(1.8rem,6vw,3rem);margin:12px 0 6px;line-height:1.15;background:linear-gradient(90deg,#d79bff,#7cc7ff);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 30px rgba(178,75,255,.4)}
-.sub{color:var(--m);margin:0 0 18px}
-.cta{border:0;cursor:pointer;color:#fff;padding:12px 26px;border-radius:99px;font:700 1rem inherit;font-family:inherit;background:linear-gradient(90deg,var(--p),var(--b));box-shadow:0 0 20px rgba(178,75,255,.6);text-decoration:none;display:inline-block}
-.deco{position:absolute;z-index:1;width:clamp(90px,22vw,200px);height:auto;border-radius:50%;opacity:.9;will-change:transform;animation:fl 7s ease-in-out infinite;filter:drop-shadow(0 0 16px var(--p))}
-.d1{left:3%;top:8%}.d2{right:3%;bottom:6%;animation-delay:-3.5s}
-.orb{position:absolute;z-index:1;width:clamp(70px,16vw,130px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff7,var(--p) 40%,var(--b));filter:blur(1px);will-change:transform;animation:fl 8s ease-in-out infinite;opacity:.8}
-.o1{right:6%;top:10%}.o2{left:6%;bottom:8%;animation-delay:-4s}
-@keyframes fl{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-18px) rotate(4deg)}}
-main{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:16px 14px 50px}
-section{display:none;animation:in .4s}section.on{display:block}
-@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1}}
-h2{font-size:1.5rem;margin:8px 0 14px;color:#e2c4ff}
-h3{margin:0 0 8px;color:#9fd5ff;font-size:1.05rem}
-.card{padding:18px;margin-bottom:14px}
-.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.letter{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--p),var(--b));font-weight:700;margin-right:8px}
-details{background:var(--g);border:1px solid var(--bd);border-radius:16px;margin-bottom:10px;padding:12px 16px}
-summary{cursor:pointer;font-weight:700;color:#e2c4ff}
-details[open] summary{margin-bottom:8px}
-ul,ol{padding-left:22px;margin:6px 0}li{margin:4px 0}
-.pill{display:inline-block;background:rgba(178,75,255,.25);padding:2px 10px;border-radius:99px;font-size:.85rem;margin:2px}
-.prompt{border-left:4px solid var(--p);background:rgba(0,0,0,.25);padding:12px;border-radius:10px;font-size:.92rem;margin:8px 0}
-.small{padding:8px 16px;font-size:.85rem}
-.tabs{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
-.tabs button{border:1px solid var(--bd);background:var(--g);color:var(--t);padding:8px 16px;border-radius:99px;cursor:pointer;font-family:inherit;font-weight:600}
-.tabs button.on{background:var(--p)}
-.ex{display:none}.ex.on{display:block}
-textarea{width:100%;min-height:80px;border-radius:12px;border:1px solid var(--bd);background:rgba(0,0,0,.3);color:var(--t);padding:10px;font:inherit;resize:vertical}
-label{font-weight:600;display:block;margin:12px 0 6px}
-.fb{display:block;max-width:100%;border-radius:14px;margin:10px 0}
-footer{position:relative;z-index:1;text-align:center;color:var(--m);padding:20px;font-size:.85rem}
-@media (prefers-reduced-motion:reduce){.deco,.orb{animation:none}section{animation:none}}
+:root{--bg:#eaf4ff;--bg2:#fdfeff;--ink:#12305a;--mut:#4d6a92;--blue:#6cc0ff;--blue2:#bfe3ff;--head:#1a73c2;--onblue:#0b2a55;--card:rgba(255,255,255,.72);--line:rgba(29,111,224,.2);--sun:#ffc94d;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1d38;--bg2:#13294d;--ink:#e8f1ff;--mut:#a9c0e4;--blue:#5aa9ff;--blue2:#2a7ae8;--card:rgba(20,40,76,.7);--line:rgba(120,180,255,.25);--head:#8cc8ff;--onblue:#0b2a55;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1d38;--bg2:#13294d;--ink:#e8f1ff;--mut:#a9c0e4;--blue:#5aa9ff;--blue2:#2a7ae8;--card:rgba(20,40,76,.7);--line:rgba(120,180,255,.25);--head:#8cc8ff;--onblue:#0b2a55;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.65 "Nunito","Segoe UI",system-ui,sans-serif;color:var(--ink);background:linear-gradient(180deg,var(--bg),var(--bg2));min-height:100vh}
+a{color:inherit}
+h1,h2,h3{font-family:"Baloo 2","Trebuchet MS",sans-serif;line-height:1.2;margin:.2em 0 .4em}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--card);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{display:flex;gap:6px;padding:8px 10px;overflow-x:auto;max-width:1100px;margin:auto;scrollbar-width:thin}
+nav a{white-space:nowrap;text-decoration:none;padding:8px 14px;border-radius:99px;font-weight:700;font-size:15px;color:var(--mut)}
+nav a.on{background:var(--blue);color:var(--onblue)}
+nav a:focus-visible,.btn:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.view{display:none;max-width:1100px;margin:auto;padding:18px 16px 60px}
+.view.on{display:block}
+.hero{position:relative;overflow:hidden;min-height:420px;border-radius:0 0 32px 32px;display:grid;place-items:center;padding:32px 16px;background:radial-gradient(circle at 20% 10%,#f0faff,transparent 55%),linear-gradient(160deg,#e6f5ff,#c4e5ff 70%,#9fd2ff);max-width:none;margin:0 -16px 20px}
+#stars{position:absolute;inset:0;width:100%;height:100%}
+.glass{position:relative;z-index:2;max-width:640px;text-align:center;padding:28px 24px;border-radius:28px;background:rgba(255,255,255,.45);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.7);box-shadow:0 10px 40px rgba(29,111,224,.25);color:#12305a}
+.glass h1{font-size:clamp(30px,7vw,48px);color:#1565b0}
+.glass p{margin:.3em 0}
+.chip{display:inline-block;background:#fff;color:#0f4fb0;border-radius:99px;padding:4px 14px;font-weight:700;font-size:14px;margin:3px}
+.float{position:absolute;z-index:1;will-change:transform;animation:fl 9s ease-in-out infinite;opacity:.9}
+.f1{left:5%;top:12%;width:70px}.f2{right:6%;bottom:12%;width:84px;animation-delay:-4s}.f3{right:12%;top:10%;width:46px;animation-delay:-2s}
+@keyframes fl{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-18px) rotate(8deg)}}
+@media (prefers-reduced-motion:reduce){.float{animation:none}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px 20px;margin:14px 0;box-shadow:0 6px 20px rgba(29,111,224,.1)}
+.card h2,.card h3{color:var(--head)}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.btn,button.btn{display:inline-block;background:var(--blue);color:var(--onblue);border:0;border-radius:99px;padding:12px 24px;font:700 16px inherit;font-family:inherit;text-decoration:none;cursor:pointer;margin:6px 6px 6px 0;box-shadow:0 4px 0 #3f9de0}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 #3f9de0}
+.btn.alt{background:var(--sun);color:#4a3200;box-shadow:0 4px 0 #c99a1a}
+h2.t{font-size:clamp(24px,5vw,34px);margin:10px 0}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px 16px;margin:10px 0}
+summary{font-weight:800;cursor:pointer;color:var(--head)}
+ol li,ul li{margin:4px 0}
+.tag{display:inline-block;background:var(--blue);color:var(--onblue);border-radius:10px;padding:2px 10px;font-weight:800;font-size:14px}
+pre{white-space:pre-wrap;background:rgba(29,111,224,.1);border-radius:14px;padding:12px 14px;font:15px/1.55 inherit;font-family:inherit;margin:8px 0}
+textarea{width:100%;min-height:80px;border-radius:14px;border:2px solid var(--line);padding:10px;font:inherit;background:var(--bg2);color:var(--ink)}
+footer{text-align:center;color:var(--mut);font-size:14px;padding:20px 12px 30px}
+.note{font-size:14px;color:var(--mut)}
 </style>
 </head>
 <body>
-<canvas id="stars"></canvas>
-<nav id="nav"></nav>
-<header class="hero">
-  <div class="orb o1"></div><div class="orb o2"></div>
-  <img class="deco d1" src="https://drive.google.com/thumbnail?id=1Kb5HByKzeQzDqsG8J-AyESmutdupSk6E&sz=w600" alt="" onerror="this.style.display='none'">
-  <img class="deco d2" src="https://drive.google.com/thumbnail?id=1Kb5HByKzeQzDqsG8J-AyESmutdupSk6E&sz=w600" alt="" onerror="this.style.display='none'">
-  <div class="glass">
-    <span class="tag">Bahasa Indonesia • Kelas 7</span>
-    <h1>✨ Teks Prosedur<br>Bertema Lingkungan</h1>
-    <p class="sub">SMPN 1 Bandar Seikijang<br>Guru: Dra. Fetri Muliati</p>
-    <button class="cta" onclick="go('pembuka')">Mulai Belajar 🚀</button>
-  </div>
-</header>
+<header class="nav"><nav id="nav" aria-label="Menu utama">
+<a href="#pembuka">1. Pembuka</a><a href="#materi">2. Materi</a><a href="#video">3. Video &amp; Prompt</a><a href="#contoh">4. Contoh Teks</a><a href="#lkpd">5. LKPD</a><a href="#kuis">6. Kuis</a><a href="#refleksi">7. Refleksi</a>
+</nav></header>
+
 <main>
+<!-- 1 PEMBUKA -->
+<section class="view on" id="v-pembuka">
+<div class="hero view on" style="display:grid">
+<canvas id="stars" aria-hidden="true"></canvas>
+<svg class="float f1" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C14 14 8 34 20 50c4 5 10 8 14 10C44 48 58 28 32 4z" fill="#3fbf7f"/><path d="M32 12v46M32 30l10-8M32 40l-10-8" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+<svg class="float f2" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#fff" opacity=".8"/><path d="M20 30l8-14 6 10M44 30l-8-14M26 44h18l-5-8M18 36l-5 8 8 2" stroke="#4aa8f0" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<svg class="float f3" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4l7 21 21 7-21 7-7 21-7-21-21-7 21-7z" fill="#ffc94d"/></svg>
+<div class="glass">
+<span class="chip">Bahasa Indonesia · Kelas 7</span>
+<h1>Teks Prosedur<br>Bertema Lingkungan</h1>
+<p>Ayo belajar menulis petunjuk langkah demi langkah untuk menjaga bumi kita!</p>
+<p><strong>SMPN 1 Bandar Seikijang</strong><br>Guru: Dra. Fetri Muliati</p>
+<a class="btn" href="#materi">Mulai belajar</a>
+</div></div>
 
-<section id="pembuka">
-  <h2>1. Pembuka</h2>
-  <div class="card glass"><h3><span class="letter">A</span>Keyakinan Kelas</h3>
-    <p>Sebelum belajar, mari kita:</p>
-    <ul><li>🗑️ Membersihkan sampah di kelas</li><li>✏️ Merapikan alat tulis</li><li>👕 Merapikan pakaian</li></ul></div>
-  <div class="card glass"><h3><span class="letter">B</span>Absensi</h3>
-    <p>Klik tombol berikut untuk mengisi daftar hadir.</p>
-    <a class="cta" href="https://forms.gle/HpiCRsNRUWa9fMW99" target="_blank" rel="noopener">📝 Isi Absensi</a></div>
-  <div class="card glass"><h3><span class="letter">C</span>Apersepsi</h3>
-    <p>Kita telah mempelajari pelajaran minggu lalu tentang <b>Teks Deskripsi</b>.</p>
-    <p>Hari ini kita akan belajar <b>Teks Prosedur bertema lingkungan</b>. 🌱</p></div>
-  <div class="card glass"><h3><span class="letter">D</span>Tujuan Pembelajaran</h3>
-    <p>🎯 Murid mampu membuat teks prosedur.</p></div>
-  <div class="card glass"><h3><span class="letter">E</span>Penilaian Dimensi Profil Lulusan</h3>
-    <ul><li><b>Penalaran Kritis</b> – mampu berpikir secara logis, analitis, dan reflektif dalam menghadapi berbagai persoalan.</li>
-    <li><b>Kolaborasi</b> – memiliki kemampuan gotong royong, bekerja sama, serta berbagi peran secara efektif dengan orang lain.</li>
-    <li><b>Komunikasi</b> – mampu berkomunikasi secara intrapribadi maupun antarpribadi, baik lisan maupun tulisan, menggunakan moda verbal maupun nonverbal.</li></ul></div>
+<div class="grid">
+<div class="card"><h3>A. Keyakinan Kelas</h3><p>Sebelum belajar, mari bersama-sama:</p><ul><li>Membersihkan sampah di kelas</li><li>Merapikan alat tulis</li><li>Merapikan pakaian</li></ul></div>
+<div class="card"><h3>B. Absensi</h3><p>Isi daftar hadir hari ini.</p><a class="btn alt" target="_blank" rel="noopener" href="https://forms.gle/HpiCRsNRUWa9fMW99">Isi absensi</a></div>
+<div class="card"><h3>C. Apersepsi</h3><p>Minggu lalu kita telah mempelajari <strong>Teks Deskripsi</strong>.</p><p>Hari ini kita akan belajar <strong>Teks Prosedur bertema lingkungan</strong>.</p></div>
+<div class="card"><h3>D. Tujuan Pembelajaran</h3><p>Murid mampu <strong>membuat teks prosedur</strong>.</p></div>
+</div>
+<div class="card"><h3>E. Penilaian Dimensi Profil Lulusan</h3><ol type="a">
+<li><strong>Penalaran Kritis</strong> – mampu berpikir secara logis, analitis, dan reflektif dalam menghadapi berbagai persoalan.</li>
+<li><strong>Kolaborasi</strong> – memiliki kemampuan gotong royong, bekerja sama, serta berbagi peran secara efektif dengan orang lain.</li>
+<li><strong>Komunikasi</strong> – mampu berkomunikasi secara intrapribadi maupun antarpribadi, baik lisan maupun tulisan, menggunakan moda verbal maupun nonverbal.</li></ol></div>
 </section>
 
-<section id="materi">
-  <h2>2. Materi</h2>
-  <details open><summary>A. Pengertian</summary>
-    <p>Teks prosedur adalah teks yang berisi petunjuk, tahapan, atau metode untuk menyelesaikan suatu kegiatan atau memecahkan masalah secara berurutan dan logis.</p></details>
-  <details><summary>B. Jenis-Jenis Teks Prosedur</summary>
-    <p><b>a. Sederhana</b>: berisi 2–3 langkah ringkas yang tidak bisa dibolak-balik. <i>Contoh: cara mengumpulkan sampah daun kering.</i></p>
-    <p><b>b. Kompleks</b>: banyak langkah, sub-tahapan, serta membutuhkan alat, bahan, dan waktu yang lebih detail. <i>Contoh: cara membuat kompos dari daun kering.</i></p>
-    <p><b>c. Protokol</b>: langkah fleksibel dan dapat dibolak-balik karena tujuan tetap tercapai. <i>Contoh: cara menaburkan pupuk kompos pada tanaman.</i></p></details>
-  <details><summary>C. Tujuan Teks Prosedur</summary>
-    <ol type="a"><li>Memberikan petunjuk atau arahan yang jelas kepada pembaca mengenai cara membuat, melakukan, atau mengoperasikan sesuatu.</li><li>Membantu pembaca mengikuti proses secara tepat dan akurat.</li></ol></details>
-  <details><summary>D. Struktur Teks Prosedur</summary>
-    <p><span class="pill">Tujuan (Pengantar)</span><span class="pill">Alat dan Bahan (opsional)</span><span class="pill">Langkah-Langkah (inti)</span><span class="pill">Penutup (opsional)</span></p>
-    <ol type="a"><li><b>Tujuan (Pengantar)</b>: pengenalan apa yang akan dibuat atau dilakukan serta hasil akhir yang ingin dicapai.</li>
-    <li><b>Alat dan Bahan / Material (opsional)</b>: daftar perlengkapan, alat, atau bahan yang diperlukan.</li>
-    <li><b>Langkah-Langkah (inti)</b>: rangkaian tahapan yang disusun urut, logis, dan sistematis dari awal hingga selesai.</li>
-    <li><b>Penutup / Penegasan Ulang / Simpulan (opsional)</b>: kesimpulan atau penegasan kembali atas keberhasilan tahapan yang dilakukan.</li></ol>
-    <h3>Penjelasan Struktur</h3>
-    <p><b>1. Tujuan.</b> Strukturnya beragam; yang paling sering ialah pengantar topik. Bisa juga berisi alasan teks dibuat, yaitu hasil akhir yang didapat jika mengikuti langkah-langkahnya.</p>
-    <p><b>2. Langkah-langkah.</b> Menerangkan tahapan yang wajib dilaksanakan agar hasil maksimal. Langkah harus berurutan dari awal sampai hasil. Misalnya pada teks prosedur memasak, tidak mungkin langsung menghidangkan sebelum menjelaskan persiapan bahan dan proses memasaknya.</p>
-    <p><b>3. Penegasan ulang.</b> Berupa harapan atau manfaat apabila petunjuk dijalankan dengan baik.</p></details>
-  <details><summary>E. Unsur Kebahasaan</summary>
-    <ol><li><b>Kata kerja perintah (imperatif)</b>: berisi perintah, imbauan, atau larangan, diakhiri tanda seru (!).</li>
-    <li><b>Kata-kata teknis</b>: kata bermakna khusus pada suatu bidang keahlian sesuai topik.</li>
-    <li><b>Konjungsi dan partikel penambahan</b>: menggabungkan kalimat sederhana menjadi kompleks. Contoh: <span class="pill">selain itu</span><span class="pill">pun</span><span class="pill">kemudian</span><span class="pill">selanjutnya</span><span class="pill">oleh karena itu</span><span class="pill">lalu</span><span class="pill">setelah itu</span><span class="pill">di samping itu</span></li>
-    <li><b>Pernyataan persuasif</b>: kalimat ajakan, permintaan, atau imbauan kepada seseorang atau banyak orang.</li></ol></details>
+<!-- 2 MATERI -->
+<section class="view" id="v-materi">
+<h2 class="t">Materi Teks Prosedur</h2>
+<details open><summary>A. Pengertian</summary><p>Teks prosedur adalah teks yang berisi petunjuk, tahapan, atau metode untuk menyelesaikan suatu kegiatan atau memecahkan masalah secara berurutan dan logis.</p></details>
+<details><summary>B. Jenis-jenis teks prosedur</summary>
+<p><span class="tag">Sederhana</span> Berisi 2–3 langkah ringkas dan tidak bisa dibolak-balik. Contoh: cara mengumpulkan sampah daun kering.</p>
+<p><span class="tag">Kompleks</span> Terdiri atas banyak langkah dan sub-tahapan, serta membutuhkan alat, bahan, dan waktu yang lebih detail. Contoh: cara membuat kompos dari daun kering.</p>
+<p><span class="tag">Protokol</span> Langkahnya fleksibel dan boleh dibolak-balik karena tujuan tetap tercapai. Contoh: cara menaburkan pupuk kompos pada tanaman.</p></details>
+<details><summary>C. Tujuan teks prosedur</summary><ol type="a"><li>Memberikan petunjuk atau arahan yang jelas kepada pembaca tentang cara membuat, melakukan, atau mengoperasikan sesuatu.</li><li>Membantu pembaca mengikuti proses secara tepat dan akurat.</li></ol></details>
+<details><summary>D. Struktur teks prosedur</summary>
+<ol type="a"><li><strong>Tujuan (pengantar)</strong>: pengenalan apa yang akan dibuat atau dilakukan serta hasil akhirnya.</li><li><strong>Alat dan bahan</strong> (opsional): daftar perlengkapan yang diperlukan.</li><li><strong>Langkah-langkah</strong> (inti): tahapan yang urut, logis, dan sistematis dari awal sampai selesai.</li><li><strong>Penutup / penegasan ulang / simpulan</strong> (opsional).</li></ol>
+<p><strong>1. Tujuan.</strong> Paling sering berupa pengantar topik. Bisa juga berisi alasan teks dibuat, yaitu hasil akhir yang didapat jika mengikuti langkah-langkahnya.</p>
+<p><strong>2. Langkah-langkah.</strong> Menerangkan tahapan yang wajib dilakukan agar hasil maksimal. Langkah harus berurutan dari tahap awal sampai hasil. Contoh: dalam teks memasak, tidak mungkin menulis cara menghidangkan sebelum cara menyiapkan bahan dan memasak.</p>
+<p><strong>3. Penegasan ulang.</strong> Berisi harapan atau manfaat jika petunjuk dijalankan dengan baik.</p></details>
+<details><summary>E. Unsur kebahasaan</summary><ol>
+<li><strong>Kata kerja perintah (imperatif).</strong> Berisi perintah, imbauan, atau larangan, dan diakhiri tanda seru (!).</li>
+<li><strong>Kata teknis.</strong> Kata bermakna khusus pada suatu bidang keahlian sesuai topik.</li>
+<li><strong>Konjungsi penambahan.</strong> Menggabungkan kalimat sederhana menjadi kalimat kompleks. Contoh: selain itu, pun, kemudian, selanjutnya, oleh karena itu, lalu, setelah itu, di samping itu.</li>
+<li><strong>Pernyataan persuasif.</strong> Kalimat ajakan, permintaan, atau imbauan kepada orang lain.</li></ol></details>
 </section>
 
-<section id="video">
-  <h2>3. Video dan Prompt</h2>
-  <div class="card glass"><h3>🎬 Video Pembelajaran</h3>
-    <a class="cta" href="https://drive.google.com/file/d/1Qi_K7lnlMI7mo8QuBlWLRhSL_8RL0PXo/view?usp=drive_link" target="_blank" rel="noopener">▶ Tonton Video</a></div>
-  <div class="card glass"><h3>A. Prompt Teks Prosedur Sederhana</h3>
-    <div class="prompt" id="p1">Buatkan sebuah teks prosedur sederhana tentang [Cara mengumpulkan sampah daun kering]. Gunakan kalimat perintah (imperatif) yang jelas, terdiri dari 3–4 langkah berurutan, dan gunakan bahasa yang mudah dipahami.</div>
-    <button class="cta small" onclick="cp('p1',this)">📋 Salin Prompt</button></div>
-  <div class="card glass"><h3>B. Prompt Teks Prosedur Kompleks</h3>
-    <div class="prompt" id="p2">Buatkan teks prosedur yang lengkap dan detail tentang [Cara membuat Kompos dari daun kering]. Susun dengan struktur: 1. Judul 2. Tujuan 3. Daftar alat/syarat/bahan 4. Langkah-langkah kronologis (gunakan konjungsi urutan seperti 'pertama', 'kemudian', 'selanjutnya') 5. Penutup atau tips tambahan.</div>
-    <button class="cta small" onclick="cp('p2',this)">📋 Salin Prompt</button></div>
-  <div class="card glass"><h3>C. Prompt Teks Prosedur Protokol</h3>
-    <div class="prompt" id="p3">Buatkan teks prosedur bertipe protokol tentang [Cara menaburkan pupuk kompos pada tanaman]. Buat langkah-langkahnya fleksibel sehingga urutannya bisa dikerjakan bolak-balik tetapi tetap menghasilkan hasil yang sama.</div>
-    <button class="cta small" onclick="cp('p3',this)">📋 Salin Prompt</button></div>
+<!-- 3 VIDEO & PROMPT -->
+<section class="view" id="v-video">
+<h2 class="t">Video dan Prompt</h2>
+<div class="card"><h3>Tonton videonya</h3><a class="btn" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1Qi_K7lnlMI7mo8QuBlWLRhSL_8RL0PXo/view?usp=drive_link">Putar video</a></div>
+<p>Salin prompt di bawah, lalu gunakan di asisten AI untuk berlatih. Setelah itu, periksa hasilnya dengan ciri teks prosedur.</p>
+<div class="card"><h3>A. Prompt teks prosedur sederhana</h3><pre id="p1">Buatkan sebuah teks prosedur sederhana tentang cara mengumpulkan sampah daun kering. Gunakan kalimat perintah (imperatif) yang jelas, terdiri dari 3–4 langkah berurutan, dan gunakan bahasa yang mudah dipahami.</pre><button class="btn" data-copy="p1">Salin prompt</button></div>
+<div class="card"><h3>B. Prompt teks prosedur kompleks</h3><pre id="p2">Buatkan teks prosedur yang lengkap dan detail tentang cara membuat kompos dari daun kering. Susun dengan struktur:
+1. Judul
+2. Tujuan
+3. Daftar alat/syarat/bahan
+4. Langkah-langkah kronologis (gunakan konjungsi urutan seperti “pertama”, “kemudian”, “selanjutnya”)
+5. Penutup atau tips tambahan.</pre><button class="btn" data-copy="p2">Salin prompt</button></div>
+<div class="card"><h3>C. Prompt teks prosedur protokol</h3><pre id="p3">Buatkan teks prosedur bertipe protokol tentang cara menaburkan pupuk kompos pada tanaman. Buat langkah-langkahnya fleksibel sehingga urutannya bisa dikerjakan bolak-balik tetapi tetap menghasilkan tanaman yang subur.</pre><button class="btn" data-copy="p3">Salin prompt</button></div>
 </section>
 
-<section id="contoh">
-  <h2>4. Contoh Teks Prosedur</h2>
-  <div class="tabs"><button class="on" data-x="e1">Sederhana</button><button data-x="e2">Kompleks</button></div>
-  <div class="ex on card glass" id="e1">
-    <h3>Cara Mengumpulkan Sampah Daun Kering</h3>
-    <p><b>Tujuan:</b> Membersihkan halaman dari daun kering dengan rapi dan aman.</p>
-    <p><b>Alat dan bahan:</b></p><ol type="a"><li>Sapu lidi</li><li>Skop</li><li>Karung atau kantong sampah besar</li></ol>
-    <p><b>Langkah-langkah:</b></p>
-    <ol type="a"><li>Siapkan sapu lidi, pengki, dan karung sampah di dekat area yang akan dibersihkan.</li>
-    <li>Sapulah daun-daun kering dari sudut halaman menuju satu titik agar terkumpul menjadi satu tumpukan.</li>
-    <li>Masukkan tumpukan daun ke dalam pengki, lalu pindahkan ke dalam karung sampah.</li>
-    <li>Ikat mulut karung dengan kuat, lalu buang ke tempat pembuangan sampah atau olah menjadi kompos.</li></ol>
-  </div>
-  <div class="ex card glass" id="e2">
-    <h3>Cara Membuat Kompos dari Daun Kering</h3>
-    <p><b>Tujuan:</b> Mengolah sampah daun kering menjadi kompos, yaitu pupuk alami yang menyuburkan tanah dan tanaman, sekaligus mengurangi sampah di lingkungan sekitar.</p>
-    <p><b>Alat:</b> sekop kecil atau garpu taman; ember atau gembor; wadah kompos (komposter, tong plastik berlubang, atau lubang tanah sekitar 1 x 1 meter); terpal atau penutup; sarung tangan; gunting atau parang (untuk mencacah daun).</p>
-    <p><b>Bahan:</b> daun kering secukupnya; sampah dapur organik (sisa sayur, kulit buah); tanah atau kompos matang sebagai starter; air bersih; aktivator kompos, misalnya EM4, atau campuran air gula dan air cucian beras (opsional).</p>
-    <p><b>Langkah-langkah:</b></p>
-    <ol type="a"><li><b>Pertama</b>, kumpulkan daun kering dari halaman, lalu pisahkan dari sampah non-organik seperti plastik, kertas berlapis, dan ranting yang terlalu besar.</li>
-    <li><b>Kemudian</b>, cacah daun kering menjadi potongan kecil menggunakan gunting atau parang. Potongan kecil membuat daun lebih cepat terurai.</li>
-    <li><b>Selanjutnya</b>, siapkan wadah kompos. Pastikan wadah memiliki lubang udara dan lubang pembuangan air di bagian bawah agar tidak terlalu lembap.</li>
-    <li><b>Setelah itu</b>, masukkan daun kering ke dalam wadah hingga membentuk lapisan setebal kira-kira 15 cm. Taburkan selapis tipis tanah atau kompos matang di atasnya.</li>
-    <li><b>Berikutnya</b>, tambahkan lapisan sampah dapur organik setebal kira-kira 5 cm. Bahan hijau ini mengandung nitrogen yang membantu mempercepat pembusukan.</li>
-    <li><b>Lalu</b>, percikkan air atau larutan aktivator secara merata sampai lapisan terasa lembap, tetapi tidak becek. Tanda yang tepat: bahan terasa seperti spons yang diperas.</li>
-    <li><b>Selanjutnya</b>, ulangi susunan lapisan daun, tanah, dan sampah dapur hingga wadah hampir penuh. Tutup bagian atas dengan terpal agar terlindung dari hujan dan sinar matahari langsung.</li>
-    <li><b>Kemudian</b>, aduk tumpukan kompos menggunakan sekop atau garpu taman satu kali seminggu. Pengadukan memasukkan udara sehingga proses penguraian berjalan baik dan tidak berbau busuk.</li>
-    <li><b>Terakhir</b>, periksa kompos setelah 4 sampai 8 minggu. Kompos matang berwarna cokelat kehitaman, bertekstur gembur seperti tanah, dan berbau seperti tanah segar. Ayak kompos, lalu gunakan untuk memupuk tanaman.</li></ol>
-    <p><b>Penutup dan Tips Tambahan:</b></p>
-    <ul><li>Jika kompos berbau menyengat, tandanya terlalu basah. Tambahkan daun kering dan aduk lebih sering.</li>
-    <li>Jika kompos tampak kering dan lambat terurai, percikkan sedikit air.</li>
-    <li>Jangan masukkan daging, tulang, minyak, atau kotoran hewan peliharaan karena menimbulkan bau dan mengundang hama.</li>
-    <li>Gunakan sarung tangan saat bekerja dan cuci tangan sampai bersih setelahnya.</li></ul>
-  </div>
+<!-- 4 CONTOH -->
+<section class="view" id="v-contoh">
+<h2 class="t">Contoh Teks Prosedur</h2>
+<div class="card"><span class="tag">Sederhana</span><h3>Cara Mengumpulkan Sampah Daun Kering</h3>
+<p><strong>Tujuan:</strong> Membersihkan halaman dari daun kering dengan rapi dan aman.</p>
+<p><strong>Alat dan bahan:</strong></p><ol type="a"><li>Sapu lidi</li><li>Skop / pengki</li><li>Karung atau kantong sampah besar</li></ol>
+<p><strong>Langkah-langkah:</strong></p><ol type="a">
+<li>Siapkan sapu lidi, pengki, dan karung sampah di dekat area yang akan dibersihkan.</li>
+<li>Sapulah daun-daun kering dari sudut halaman menuju satu titik agar terkumpul menjadi satu tumpukan.</li>
+<li>Masukkan tumpukan daun ke dalam pengki, lalu pindahkan ke dalam karung sampah.</li>
+<li>Ikat mulut karung dengan kuat, lalu buang ke tempat pembuangan sampah atau olah menjadi kompos.</li></ol></div>
+
+<div class="card"><span class="tag">Kompleks</span><h3>Cara Membuat Kompos dari Daun Kering</h3>
+<p><strong>Tujuan:</strong> Mengolah sampah daun kering menjadi kompos, yaitu pupuk alami yang menyuburkan tanah dan tanaman, sekaligus mengurangi sampah di lingkungan sekitar.</p>
+<p><strong>Alat:</strong> sekop kecil atau garpu taman; ember atau gembor; wadah kompos (komposter, tong plastik berlubang, atau lubang tanah sekitar 1 × 1 meter); terpal atau penutup; sarung tangan; gunting atau parang.</p>
+<p><strong>Bahan:</strong> daun kering secukupnya; sampah dapur organik (sisa sayur dan kulit buah); tanah atau kompos matang sebagai starter; air bersih; aktivator kompos seperti EM4, atau campuran air gula dan air cucian beras (opsional).</p>
+<p><strong>Langkah-langkah:</strong></p><ol type="a">
+<li><em>Pertama</em>, kumpulkan daun kering dari halaman, lalu pisahkan dari sampah non-organik seperti plastik, kertas berlapis, dan ranting besar.</li>
+<li><em>Kemudian</em>, cacah daun kering menjadi potongan kecil dengan gunting atau parang agar lebih cepat terurai.</li>
+<li><em>Selanjutnya</em>, siapkan wadah kompos. Pastikan ada lubang udara dan lubang pembuangan air di bagian bawah.</li>
+<li><em>Setelah itu</em>, masukkan daun kering hingga membentuk lapisan setebal kira-kira 15 cm. Taburkan selapis tipis tanah atau kompos matang di atasnya.</li>
+<li><em>Berikutnya</em>, tambahkan lapisan sampah dapur organik setebal kira-kira 5 cm. Bahan hijau ini mengandung nitrogen yang mempercepat pembusukan.</li>
+<li><em>Lalu</em>, percikkan air atau larutan aktivator merata sampai lembap, tetapi tidak becek (terasa seperti spons yang diperas).</li>
+<li><em>Selanjutnya</em>, ulangi lapisan daun, tanah, dan sampah dapur hingga wadah hampir penuh. Tutup dengan terpal agar terlindung dari hujan dan sinar matahari langsung.</li>
+<li><em>Kemudian</em>, aduk tumpukan kompos satu kali seminggu agar udara masuk dan tidak berbau busuk.</li>
+<li><em>Terakhir</em>, periksa kompos setelah 4 sampai 8 minggu. Kompos matang berwarna cokelat kehitaman, gembur, dan berbau seperti tanah segar. Ayak, lalu gunakan untuk memupuk tanaman.</li></ol>
+<p><strong>Penutup dan tips tambahan:</strong></p><ul>
+<li>Jika kompos berbau menyengat, berarti terlalu basah. Tambahkan daun kering dan aduk lebih sering.</li>
+<li>Jika kompos kering dan lambat terurai, percikkan sedikit air.</li>
+<li>Jangan masukkan daging, tulang, minyak, atau kotoran hewan peliharaan karena menimbulkan bau dan mengundang hama.</li>
+<li>Gunakan sarung tangan dan cuci tangan sampai bersih setelahnya.</li></ul></div>
 </section>
 
-<section id="lkpd">
-  <h2>5. LKPD</h2>
-  <div class="card glass"><h3>📄 Lembar Kerja Peserta Didik</h3>
-    <img class="fb" src="https://drive.google.com/thumbnail?id=1nJ2GOVFkC43tqYIzZYsoX63WWHBQmuv8&sz=w1000" alt="LKPD Teks Prosedur" onerror="this.style.display='none'">
-    <a class="cta" href="https://drive.google.com/file/d/1nJ2GOVFkC43tqYIzZYsoX63WWHBQmuv8/view?usp=sharing" target="_blank" rel="noopener">📂 Buka LKPD</a></div>
+<!-- 5 LKPD -->
+<section class="view" id="v-lkpd">
+<h2 class="t">LKPD</h2>
+<div class="card"><h3>Lembar Kerja Peserta Didik</h3><p>Kerjakan bersama kelompokmu. Bagi peran dengan adil, diskusikan, lalu tulis teks prosedur bertema lingkungan.</p>
+<a class="btn" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1nJ2GOVFkC43tqYIzZYsoX63WWHBQmuv8/view?usp=sharing">Buka LKPD</a></div>
 </section>
 
-<section id="kuis">
-  <h2>6. Kuis</h2>
-  <div class="card glass"><h3>🎮 Kuis Interaktif</h3><p>Uji pemahamanmu tentang teks prosedur!</p>
-    <a class="cta" href="https://view.genially.com/6af84b94bf486596a6f0abe6" target="_blank" rel="noopener">🚀 Mulai Kuis</a></div>
+<!-- 6 KUIS -->
+<section class="view" id="v-kuis">
+<h2 class="t">Kuis</h2>
+<div class="card"><h3>Uji pemahamanmu</h3><p>Jawab semua soal dengan teliti. Kamu pasti bisa!</p>
+<a class="btn alt" target="_blank" rel="noopener" href="https://view.genially.com/6af84b94bf486596a6f0abe6">Mulai kuis</a></div>
 </section>
 
-<section id="refleksi">
-  <h2>7. Refleksi</h2>
-  <div class="card glass">
-    <label for="r1">a. Apakah hari ini menemukan pengetahuan baru?</label><textarea id="r1"></textarea>
-    <label for="r2">b. Adakah kesulitan dalam memahami materi hari ini? Sebutkan…</label><textarea id="r2"></textarea>
-    <label for="r3">c. Saran untuk materi selanjutnya…</label><textarea id="r3"></textarea>
-    <p style="margin-top:14px"><button class="cta small" onclick="sv(this)">💾 Simpan</button> <button class="cta small" onclick="cpr(this)">📋 Salin Jawaban</button></p>
-  </div>
+<!-- 7 REFLEKSI -->
+<section class="view" id="v-refleksi">
+<h2 class="t">Refleksi</h2>
+<div class="card">
+<label for="r1"><strong>a. Apakah hari ini kamu menemukan pengetahuan baru?</strong></label><textarea id="r1"></textarea><br><br>
+<label for="r2"><strong>b. Adakah kesulitan dalam memahami materi hari ini? Sebutkan.</strong></label><textarea id="r2"></textarea><br><br>
+<label for="r3"><strong>c. Apa saranmu untuk materi selanjutnya?</strong></label><textarea id="r3"></textarea><br>
+<button class="btn" id="saveR">Simpan &amp; salin jawaban</button> <span id="rmsg" class="note" role="status"></span>
+<p class="note">Jawaban tersimpan di perangkat ini. Tempelkan hasil salinan ke pesan untuk gurumu.</p></div>
 </section>
 </main>
-<footer>Media Pembelajaran Bahasa Indonesia • Kelas 7 • SMPN 1 Bandar Seikijang</footer>
+<footer>Media pembelajaran Bahasa Indonesia · SMPN 1 Bandar Seikijang · Kelas 7 · Dra. Fetri Muliati</footer>
 
 <script>
-var S=[["pembuka","Pembuka"],["materi","Materi"],["video","Video & Prompt"],["contoh","Contoh"],["lkpd","LKPD"],["kuis","Kuis"],["refleksi","Refleksi"]];
-var nav=document.getElementById("nav");
-S.forEach(function(s,i){var b=document.createElement("button");b.textContent=(i+1)+". "+s[1];b.dataset.s=s[0];b.onclick=function(){go(s[0])};nav.appendChild(b)});
-function go(id,noscroll){
-  if(!document.getElementById(id))id="pembuka";
-  document.querySelectorAll("section").forEach(function(e){e.classList.toggle("on",e.id===id)});
-  nav.querySelectorAll("button").forEach(function(b){b.classList.toggle("on",b.dataset.s===id)});
-  try{history.replaceState(null,"","#"+id)}catch(e){}
-  if(!noscroll)document.querySelector("main").scrollIntoView({behavior:"smooth"});
-}
-window.addEventListener("hashchange",function(){go(location.hash.slice(1),true)});
-go(location.hash.slice(1)||"pembuka",true);
-document.querySelectorAll(".tabs button").forEach(function(b){b.onclick=function(){
-  document.querySelectorAll(".tabs button").forEach(function(x){x.classList.toggle("on",x===b)});
-  document.querySelectorAll(".ex").forEach(function(e){e.classList.toggle("on",e.id===b.dataset.x)})}});
-function flash(b,t){var o=b.textContent;b.textContent=t;setTimeout(function(){b.textContent=o},1500)}
-function copy(t,b){
-  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){flash(b,"✅ Tersalin")},function(){fb(t,b)})}else fb(t,b)}
-function fb(t,b){var a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");flash(b,"✅ Tersalin")}catch(e){flash(b,"Gagal")}a.remove()}
-function cp(id,b){copy(document.getElementById(id).textContent,b)}
-function cpr(b){copy("Refleksi Teks Prosedur\na. Pengetahuan baru: "+r1.value+"\nb. Kesulitan: "+r2.value+"\nc. Saran: "+r3.value,b)}
-function sv(b){try{localStorage.setItem("refleksi-tp",JSON.stringify([r1.value,r2.value,r3.value]));flash(b,"✅ Tersimpan")}catch(e){flash(b,"Tidak bisa menyimpan")}}
-try{var d=JSON.parse(localStorage.getItem("refleksi-tp")||"null");if(d){r1.value=d[0];r2.value=d[1];r3.value=d[2]}}catch(e){}
-
-/* Bintang ringan: 70 partikel, ~30fps, berhenti saat tab tersembunyi */
 (function(){
-  var c=document.getElementById("stars"),x=c.getContext("2d"),w,h,P=[],N=70,last=0,run=true;
-  var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion:reduce)").matches;
-  function size(){var r=Math.min(window.devicePixelRatio||1,1.5);w=innerWidth;h=innerHeight;c.width=w*r;c.height=h*r;x.setTransform(r,0,0,r,0,0)}
-  size();addEventListener("resize",size);
-  var cols=["#d79bff","#7cc7ff","#ffffff","#b24bff"];
-  for(var i=0;i<N;i++)P.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.8+.4,v:Math.random()*.25+.05,t:Math.random()*6.28,k:cols[i%4]});
-  function draw(ts){
-    if(run&&ts-last>33){last=ts;x.clearRect(0,0,w,h);
-      for(var i=0;i<N;i++){var p=P[i];p.y-=p.v;p.t+=.03;if(p.y<-5){p.y=h+5;p.x=Math.random()*w}
-        x.globalAlpha=.4+.6*Math.abs(Math.sin(p.t));x.fillStyle=p.k;x.shadowColor=p.k;x.shadowBlur=6;
-        x.beginPath();x.arc(p.x,p.y,p.r,0,6.283);x.fill()}}
-    if(!reduce)requestAnimationFrame(draw)}
-  document.addEventListener("visibilitychange",function(){run=!document.hidden});
-  requestAnimationFrame(draw);if(reduce){last=-99;draw(100)}
+var ids=['pembuka','materi','video','contoh','lkpd','kuis','refleksi'];
+function route(){
+  var h=(location.hash||'#pembuka').slice(1); if(ids.indexOf(h)<0)h='pembuka';
+  ids.forEach(function(i){document.getElementById('v-'+i).classList.toggle('on',i===h)});
+  document.querySelectorAll('#nav a').forEach(function(a){var on=a.getAttribute('href')==='#'+h;a.classList.toggle('on',on);if(on)a.scrollIntoView({block:'nearest',inline:'center'})});
+  window.scrollTo(0,0);
+  hero(h==='pembuka');
+}
+window.addEventListener('hashchange',route);
+
+/* Bintang ringan: 36 partikel, ±24 FPS, berhenti saat tab tersembunyi */
+var cv=document.getElementById('stars'),cx=cv.getContext('2d'),W=0,H=0,P=[],run=false,last=0,raf=0;
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function size(){var r=cv.getBoundingClientRect();W=cv.width=Math.max(1,r.width);H=cv.height=Math.max(1,r.height)}
+function init(){size();var n=W<600?24:36;P=[];for(var i=0;i<n;i++)P.push({x:Math.random()*W,y:Math.random()*H,r:1.5+Math.random()*3,v:.15+Math.random()*.35,t:Math.random()*6.28,s:Math.random()<.3})}
+function star(x,y,r){cx.beginPath();for(var i=0;i<8;i++){var a=i*Math.PI/4,d=i%2?r*.35:r*2.2;cx.lineTo(x+Math.cos(a)*d,y+Math.sin(a)*d)}cx.closePath();cx.fill()}
+function draw(ts){
+  raf=requestAnimationFrame(draw);
+  if(ts-last<42)return; last=ts;
+  cx.clearRect(0,0,W,H);
+  P.forEach(function(p){
+    p.y-=p.v;p.t+=.05;if(p.y<-10){p.y=H+10;p.x=Math.random()*W}
+    var a=.45+.45*Math.sin(p.t);
+    cx.fillStyle=p.s?'rgba(255,255,255,'+a+')':'rgba(255,236,170,'+a+')';
+    if(p.s)star(p.x,p.y,p.r);else{cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.28);cx.fill()}
+  });
+}
+function hero(show){
+  if(show&&!run&&!reduce){run=true;init();raf=requestAnimationFrame(draw)}
+  else if(show&&reduce){init();draw(100);cancelAnimationFrame(raf)}
+  else if(!show&&run){run=false;cancelAnimationFrame(raf)}
+}
+document.addEventListener('visibilitychange',function(){if(document.hidden&&run){cancelAnimationFrame(raf)}else if(run){raf=requestAnimationFrame(draw)}});
+var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(run)init()},200)});
+
+/* Salin prompt */
+document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){
+  var t=document.getElementById(b.dataset.copy).innerText;
+  var ok=function(){var o=b.textContent;b.textContent='Tersalin!';setTimeout(function(){b.textContent=o},1500)};
+  try{navigator.clipboard.writeText(t).then(ok,fb)}catch(e){fb()}
+  function fb(){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');ok()}catch(e){}a.remove()}
+})});
+
+/* Refleksi */
+function ld(){try{['r1','r2','r3'].forEach(function(k){var v=localStorage.getItem('tp_'+k);if(v)document.getElementById(k).value=v})}catch(e){}}
+document.getElementById('saveR').addEventListener('click',function(){
+  var v=['r1','r2','r3'].map(function(k){return document.getElementById(k).value});
+  try{v.forEach(function(x,i){localStorage.setItem('tp_r'+(i+1),x)})}catch(e){}
+  var txt='Refleksi Teks Prosedur\na. Pengetahuan baru: '+v[0]+'\nb. Kesulitan: '+v[1]+'\nc. Saran: '+v[2];
+  var m=document.getElementById('rmsg');
+  try{navigator.clipboard.writeText(txt).then(function(){m.textContent='Tersimpan dan tersalin. Terima kasih!'},function(){m.textContent='Tersimpan. Terima kasih!'})}catch(e){m.textContent='Tersimpan. Terima kasih!'}
+});
+ld();route();
 })();
 </script>
 </body>
